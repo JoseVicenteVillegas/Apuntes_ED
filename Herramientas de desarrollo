@@ -1,0 +1,157 @@
+**Herramientas de Desarrollo**
+
+**1.- ¿Para que sirve un compilador? ¿Qué tipo de archivo obtenemos tras compilar?**
+     
+ -Sirve para traducir lenguajes de programacion a otros lenguajes diferentes
+-Normalmente lenguaje de Máquina, aunque también puede salir de código intermedio (bytecode)
+       
+**2.- ¿Para que sirve un enlazador? ¿Qué tipo de archivo obtenemos tras enlazar?**
+       
+-Es un programa que sirve para generar ficheros ejecutables o una biblioteca, pero en el caso de programas enlazados dinámicamente, el enlace entre el programa ejecutable y las bibliotecas se realiza en tiempo de carga o ejecución del programa.
+       
+**3.- ¿Para que sirve un interprete? ¿Obtenemos algún archivo tras interpretar?**
+
+ -Los interpretes a diferencia de los compiladores y los enlazadores solo realiza la traducción a medida que sea necesaria.
+ -No obtenemos archivos.
+       
+**4.- Explica cada uno de los siguientes conceptos e indica la relación entre ellos.**
+
+	-Codigo fuente: es un conjunto de líneas de texto con los pasos que 	debe seguir la computadora para ejecutar dicho programa.
+	-Codigo objeto: Es el resultado de una compilacion del codigo fuente
+	-Codigo binario: es el sistema numérico usado para la representación de textos, o procesadores de instrucciones de computadora
+
+**5.- ¿Qué tipo de código es el bytecode generado por el compilador de Java?**
+
+Es un subproducto del codigo fuente utilidad en el programa original de javascrypt.
+
+**HERRAMIENTAS DE DESARROLLO**
+
+**2- Para cada uno de los lenguajes anteriores, indica el proceso realizado para conseguir ejecutar el código: ¿compilación o interpretación?**
+
+-bash: interpretación
+-python: copilación
+-php:copilación
+-javascript (nodejs):copilación
+-c: compilacion
+-c++:interopretación
+-java:copilación
+-ruby:interopretación 
+-go:interpretación
+-rust:interopretación
+-lisp:interpretación
+-ensamblador (nasm):copilación
+
+**3- Para cada uno de los lenguajes anteriores, indica el nombre del compilador o interprete utilizado en GNU/Linux.
+**
+
+-bash: copilación
+-python: interpretación
+-php:copilación
+-javascript (nodejs):interpretación
+-c: compilacion
+-c++:copilación
+-java:interpretación
+-ruby:copilación
+-go:interpretación
+-rust:copilación
+-lisp:interpretación
+-ensamblador (nasm):copilación
+
+**4- Investiga y averigua que extensión tienen los archivos de código fuente de los siguientes lenguajes:**
+
+-bash: .sh
+-python: .pyd
+-php: .dll
+-javascript: .java
+-c: .i
+-c++: .cpp
+-java .jai
+-ensamblador: .asm
+-ruby: .rb
+-go: .go
+-rust: .ru
+-lisp: .sp
+
+**5- Scripts ejecutables para los lenguajes interpretados. Edita los scripts para los siguientes lenguajes:**
+
+-bash
+-python
+-php
+-javascript
+-java
+-ruby
+-go
+-rust
+-lisp
+
+
+**6- ¿Qué extensión tienen los archivos de código objeto?**
+
+.obj
+
+**7- Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
+Deberemos obtener 3 archivos: main.o, suma.o y datos.o**
+
+
+
+**8- Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:**
+
+
+
+**9- Deberememos obtener un archivo programa binario ejecutable. Si lo ejecutamos obtenemos el siguiente resultado:
+Deberemos obtener 3 archivos: main.o, suma.o y datos.o**
+
+**10- Lenguaje C++. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:**
+
+**11- Bibliotecas. Define que se entiende por biblioteca o librería y los tipos que existen.**
+
+-Es un conjunto de implementaciones funcionales, codificadas en un lenguaje de programación, que ofrece una interfaz bien definida para la funcionalidad que se invoca.
+
+-Tipo Estaticas Dinamicas y Remotas
+
+**12- Bibliotecas. ¿Qué tipo es el más utilizado actualmente? ¿Por qué?**
+
+Bibliotecas de tipo denamicas debido a su disposicion y eficiencia a la hora de ejecutar y administrar arcivos, ademas de ser bastante flexible a la hora de modificarlo.
+
+**13- Bibliotecas. Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.**
+
+**14- Bibliotecas. Crea una biblioteca dinámica en Java que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.**
+
+**15- Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas estáticas.**
+
+
+Estático El enlazado estático incluye el código de la biblioteca dentro del programa que hace uso de ella.
+Ventajas:
+
+    Programa autocontenido.
+    Las actualizaciones de la biblioteca no le afectan.
+
+Desventajas:
+
+    Mayor tamaño del programa.
+    El programa no se beneficia de las actualizaciones de la biblioteca.
+
+
+**16- Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas dinámicas.**
+
+Dinámico El enlazado dinámico NO incluye el código de la biblioteca dentro del programa que hace uso de ella. En su lugar se realiza un vínculo a la biblioteca dinámica.
+Ventajas:
+
+    Menor tamaño del programa.
+    El programa se beneficia de las actualizaciones de la biblioteca.
+
+Desventajas:
+
+    Programa NO autocontenido.
+    Las actualizaciones de la biblioteca le afectan para bien y para mal.
+
+
+**17-Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo ejecutable para código fuente en C con make. Haz uso de un buildfile.**
+
+**18- Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Ant. Haz uso de un buildfile.**
+
+**19- Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Maven. Haz uso de un buildfile.**
+
+**20- Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Gradle. Haz uso de un buildfile.**
+
+**21-CMake. Automatiza el proceso de compilación de ejecutable y bibliotecas, su enlazado y la generación del archivo ejecutable para código fuente en C++. Crea un buildfile con CMake.**
